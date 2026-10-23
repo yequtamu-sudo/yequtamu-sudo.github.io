@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaikob Tamrat - Developer Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7fb;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #10213b;
+            color: white;
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: #1d3557;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        .tech-tag {
+            display: inline-block;
+            background: #e2e8f0;
+            color: #334155;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            margin-right: 6px;
+            margin-top: 5px;
+        }
+
+        footer {
+            background: #10213b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Yaikob Tamrat</h1>
+        <p>Software Engineering Student | Full-Stack & Systems Developer</p>
+        <p>Building practical software applications, web solutions, and distributed systems.</p>
+        <a class="button" href="#projects">View My Projects</a>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Software Engineering student at Wachamo University passionate about web development, 
+            software architecture, object-oriented design, and database systems. I focus on creating clean, 
+            efficient, and user-friendly applications to solve real-world challenges.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div>
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">JavaScript / HTML / CSS</span>
+            <span class="tech-tag">SQL / MySQL</span>
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">Git & GitHub</span>
+            <span class="tech-tag">RESTful APIs</span>
+            <span class="tech-tag">OOP & Design Patterns</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+
+        <div class="project">
+            <h3>4-Way Arduino Traffic Light Controller</h3>
+            <p>A smart embedded system implementing four-way traffic light sequencing integrated with a 16x2 LCD display and temperature monitoring module.</p>
+            <div>
+                <span class="tech-tag">Arduino / C++</span>
+                <span class="tech-tag">Hardware / Embedded</span>
+            </div>
+            <br>
+            <a class="button" target="_blank" href="https://github.com/yequtamu-sudo/Traffic-Light-System">View Repository</a>
+        </div>
+
+        <div class="project">
+            <h3>Hossana Terminal Management System</h3>
+            <p>A Java Swing desktop system built for managing regional bus terminal routes, schedules, passenger ticketing, and data persistence.</p>
+            <div>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Java Swing</span>
+                <span class="tech-tag">MySQL</span>
+            </div>
+            <br>
+            <a class="button" target="_blank" href="https://github.com/yequtamu-sudo">View Repository</a>
+        </div>
+
+        <div class="project">
+            <h3>Distributed & Web Development Projects</h3>
+            <p>Collection of custom web applications, network socket implementations, and university engineering software lab assignments.</p>
+            <div>
+                <span class="tech-tag">HTML / CSS / JS</span>
+                <span class="tech-tag">Java Sockets / RMI</span>
+            </div>
+            <br>
+            <a class="button" target="_blank" href="https://github.com/yequtamu-sudo?tab=repositories">Explore All Repositories</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact & Socials</h2>
+        <p>Connect with me on GitHub or check out my software projects:</p>
+        <p>
+            <a class="button" target="_blank" href="https://github.com/yequtamu-sudo">Visit GitHub Profile</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Yaikob Tamrat | Hosted on GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
