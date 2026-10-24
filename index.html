@@ -55,6 +55,33 @@
             padding: 40px 20px;
         }
 
+        /* Profile Card Layout */
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2563eb;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 600px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
         .project {
             background: white;
             padding: 25px;
@@ -71,11 +98,21 @@
             border-radius: 6px;
             text-decoration: none;
             margin-top: 10px;
+            margin-right: 8px;
             font-weight: 500;
+            transition: background 0.2s ease;
         }
 
         .button:hover {
             background: #1d4ed8;
+        }
+
+        .button-secondary {
+            background: #059669;
+        }
+
+        .button-secondary:hover {
+            background: #047857;
         }
 
         .tech-tag {
@@ -105,7 +142,10 @@
         <h1>Yaikob Tamrat</h1>
         <p>Software Engineering Student | Full-Stack & Systems Developer</p>
         <p>Building practical software applications, web solutions, and distributed systems.</p>
+        
+        <!-- Header Action Buttons -->
         <a class="button" href="#projects">View My Projects</a>
+        <a class="button button-secondary" href="Yaikob_Tamrat_Resume.pdf" download>Download My Resume (PDF)</a>
     </header>
 
     <nav>
@@ -117,11 +157,17 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>
-            I am a Software Engineering student at Wachamo University passionate about web development, 
-            software architecture, object-oriented design, and database systems. I focus on creating clean, 
-            efficient, and user-friendly applications to solve real-world challenges.
-        </p>
+        <div class="about-container">
+            <!-- Profile Photo Tag -->
+            <img class="profile-img" src="images/profile.jpg" alt="Yaikob Tamrat Profile Photo">
+            <div>
+                <p>
+                    I am a Software Engineering student at Wachamo University passionate about web development, 
+                    software architecture, object-oriented design, and database systems. I focus on creating clean, 
+                    efficient, and user-friendly applications to solve real-world challenges.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section id="skills">
@@ -134,6 +180,7 @@
             <span class="tech-tag">Git & GitHub</span>
             <span class="tech-tag">RESTful APIs</span>
             <span class="tech-tag">OOP & Design Patterns</span>
+            <span class="tech-tag">Distributed Systems</span>
         </div>
     </section>
 
@@ -142,6 +189,10 @@
 
         <div class="project">
             <h3>4-Way Arduino Traffic Light Controller</h3>
+            
+            <!-- Project Image Reference -->
+            <img src="images/traffic-light.png" alt="Traffic Light Project" style="width:100%; max-height:250px; object-fit:cover; border-radius:8px; margin-bottom:12px;">
+
             <p>A smart embedded system implementing four-way traffic light sequencing integrated with a 16x2 LCD display and temperature monitoring module.</p>
             <div>
                 <span class="tech-tag">Arduino / C++</span>
@@ -153,7 +204,7 @@
 
         <div class="project">
             <h3>Hossana Terminal Management System</h3>
-            <p>A Java Swing desktop system built for managing regional bus terminal routes, schedules, passenger ticketing, and data persistence.</p>
+            <p>A Java Swing desktop application built for managing regional bus terminal routes, schedules, passenger ticketing, and data persistence.</p>
             <div>
                 <span class="tech-tag">Java</span>
                 <span class="tech-tag">Java Swing</span>
@@ -165,7 +216,7 @@
 
         <div class="project">
             <h3>Distributed & Web Development Projects</h3>
-            <p>Collection of custom web applications, network socket implementations, and university engineering software lab assignments.</p>
+            <p>Collection of custom web applications, multi-threaded Java network socket implementations, and engineering software lab assignments.</p>
             <div>
                 <span class="tech-tag">HTML / CSS / JS</span>
                 <span class="tech-tag">Java Sockets / RMI</span>
@@ -176,10 +227,11 @@
     </section>
 
     <section id="contact">
-        <h2>Contact & Socials</h2>
-        <p>Connect with me on GitHub or check out my software projects:</p>
+        <h2>Contact & Resume</h2>
+        <p>Connect with me on GitHub or download my resume:</p>
         <p>
             <a class="button" target="_blank" href="https://github.com/yequtamu-sudo">Visit GitHub Profile</a>
+            <a class="button button-secondary" href="Yaikob_Tamrat_Resume.pdf" download>Download Resume (PDF)</a>
         </p>
     </section>
 
